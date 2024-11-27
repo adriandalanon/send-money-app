@@ -1,0 +1,9 @@
+{
+  "user": "admin",
+  "transactions": [
+    {"amount": 20000},
+    {"amount": 30000},
+    {"amount": 40000},
+    {"amount": 50000},
+  ]
+}

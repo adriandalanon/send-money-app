@@ -1,0 +1,62 @@
+.transactions-screen {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.transactions-screen h1 {
+    margin-bottom: 20px;
+}
+
+.transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.transactions-table th,
+.transactions-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.transactions-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.transactions-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.transactions-table tr:hover {
+    background-color: #eaeaea;
+}
+
+/* Styles for the container (to center the square div) */
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Make sure it takes the full height of the screen */
+    margin: 0;
+    /* Optional: background color for the page */
+}
+
+/* Styles for the square div */
+.square-div {
+    width: 300px;
+    /* Fixed width */
+    height: 300px;
+    /* Fixed height to make it square */
+    border: 2px solid #333;
+    /* Border around the div */
+    padding: 20px;
+    /* Optional: padding inside the div */
+    background-color: #fff;
+    /* Optional: background color inside the div */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: slight shadow for better visibility */
+    overflow: auto;
+    /* If the content exceeds, allow scrolling */
+}

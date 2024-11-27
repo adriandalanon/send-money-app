@@ -1,0 +1,92 @@
+/* Make sure the body and html elements take full height */
+html,
+body {
+    height: 100%;
+    /* Make sure both html and body fill the screen */
+    margin: 0;
+    /* Remove any default margin */
+    padding: 0;
+    /* Remove any default padding */
+    display: flex;
+    /* Use Flexbox for overall layout */
+    flex-direction: column;
+    /* Align the header and content vertically */
+}
+
+/* Main screen container (it will take up the full available height) */
+.send-money-screen {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 20px;
+    /* Allow this container to expand to fill available space */
+}
+
+/* Header styling (fixed at the top) */
+.send-money-screen .header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+    /* Include padding in the total height calculation */
+}
+
+/* Container below the header that will hold the form */
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    /* Let it take all the remaining space below the header */
+    padding-top: 80px;
+    /* Adjust this based on the header height (if your header is 80px tall) */
+}
+
+/* Styling the small square form container */
+.form-container {
+    width: 300px;
+    /* Fixed width */
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    /* Border around the square */
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional shadow for a better look */
+    text-align: center;
+    /* Center text */
+}
+
+/* Styling for the input field and button */
+.form-container input,
+.form-container button {
+    width: auto;
+    padding: 10px;
+    margin: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button styling */
+.form-container button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+}
+
+/* Message text styling */
+.form-container p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
